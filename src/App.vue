@@ -1,25 +1,56 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar/>
+  <Home />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    Home
   }
 }
 </script>
 
 <style>
+
+:root {
+  --primary: #170630;
+  --secondary: #af0630;
+}
+
 #app {
+  position: absolute;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 70px 1fr 60px;
+  grid-gap: 20px;
+  height: 100%;
+  width: 100%;
+  background: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
