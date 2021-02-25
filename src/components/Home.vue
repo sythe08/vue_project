@@ -62,13 +62,13 @@ export default {
     
     .intro h1 {
         font-size: 2rem;
-        color: var(--secondary);
+        color: #fff;
     }
 
     .intro p {
         font-size: 0.6rem;
         font-weight: 100;
-        color: grey;
+        color: rgba(255,255,255,0.8);
     }
 
     .svg-image {

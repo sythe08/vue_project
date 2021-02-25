@@ -33,10 +33,11 @@ export default {
   display: grid;
   grid-template-columns: 10px 1fr 10px;
   grid-template-rows: 70px 1fr 60px;
-  grid-gap: 20px;
+  grid-gap: 15px;
   height: 100%;
   width: 100%;
   background: var(--primary);
+  max-width: 1100px;
 }
 
 * {
